@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { cookies } from 'next/headers'
 import jwt from "jsonwebtoken"
-
-const secret = "ELIBRARY-JWT-SECRET"
+import {secret} from "./utils/utils"
 
 export default async function middleware(req: NextRequest) {
     const { pathname } = req.nextUrl;

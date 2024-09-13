@@ -1,12 +1,11 @@
 import axios from "axios";
 import {registerDataI} from "@/utils/types";
 import Cookies from "js-cookie";
+import {BASE_URL} from "../utils/utils"
 
-
-const base = "http://localhost:8000/api";
 
 export async function login(phoneNumber:string, password:string){
-    const resp = await axios.post<registerDataI>(`${base}/auth/login`, {phoneNumber:phoneNumber,password:password}, {
+    const resp = await axios.post<registerDataI>(`${BASE_URL}/auth/login`, {phoneNumber:phoneNumber,password:password}, {
         withCredentials:true
     });
     const today = new Date()
