@@ -1,7 +1,7 @@
 import axios from "axios";
 import {registerDataI} from "@/utils/types";
 import Cookies from "js-cookie";
-import {BASE_URL} from "../utils/utils"
+import { BASE_URL } from "@/utils/utils"
 
 
 export async function login(phoneNumber:string, password:string){
