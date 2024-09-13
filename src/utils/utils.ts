@@ -1,1 +1,12 @@
-// https://www.figma.com/design/oU0VCmFheQjbQv1A2ybJTd/akhror-web-frontend-quiz-app?node-id=205-403&node-type=canvas&t=fO4i5SbDIq0X4B3F-0
+/** @format */
+
+export let isAuthenticated = false;
+export function authenticate() {
+	isAuthenticated = true;
+}
+export const phoneInput =
+	"border outline-none focus:outline-none focus-visible:outline-none focus:ring " +
+	"focus-visible:ring-1 focus-visible:ring-black focus:border-none focus-visible:border-none px-3 py-2 rounded-md";
+
+// export const BASE_URL = "https://elibrary-backend-production.up.railway.app/api/";
+export const BASE_URL = "http://localhost:8000/api/"
