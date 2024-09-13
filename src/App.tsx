@@ -1,4 +1,4 @@
 function App() {
-    return <div>salom</div>
+    return <div>hello</div>
 }
 export default  App
