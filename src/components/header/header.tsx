@@ -32,6 +32,6 @@ function Header() {
 export default Header
 
 
-function Logo() {
+export function Logo() {
     return <h1 className={"text-center text-2xl"}>E-kutubxona</h1>
 }

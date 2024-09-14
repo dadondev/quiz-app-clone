@@ -3,7 +3,7 @@ import {InputMask} from "primereact/inputmask";
 import {Button} from "primereact/button";
 import PasswordInput from "@/components/password/input";
 import {CgSpinner} from "react-icons/cg";
-import {login} from "@/pages/action";
+import {login} from "@/action";
 import {useRouter} from "next/navigation";
 import {Form, Formik} from "formik";
 import {loginSchema} from "@/utils/schemas";

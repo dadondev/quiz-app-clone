@@ -17,7 +17,3 @@ export async function login(phoneNumber:string, password:string){
    }
    return resp.data
 }
-
-const forRegister = {
-    special:"ok",firstName:"Karimberdi", lastName:"Tolipov"
-}

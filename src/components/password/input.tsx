@@ -6,7 +6,7 @@ import {EyeIcon} from "primereact/icons/eye";
 import {FormikErrors, FormikTouched} from "formik";
 import * as React from "react";
 
-function PasswordInput ({errors, touched, handleBlur, handleChange, isSubmitting}:{errors:FormikErrors<{password:string}>, touched:FormikTouched<{password: string}>, handleChange:handleChange, handleBlur:handleBlur, isSubmitting:boolean}){
+function PasswordInput ({errors,  handleBlur, handleChange, isSubmitting}:{errors:FormikErrors<{password:string}>, touched:FormikTouched<{password: string}>, handleChange:handleChange, handleBlur:handleBlur, isSubmitting:boolean}){
     const [type,setType] = useState<"text"|"password">("password");
     function handleTypeChange(){
         if(type === "password") {

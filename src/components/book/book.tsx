@@ -36,7 +36,7 @@ function Book(){
 }
 export default Book
 
-function PropertyBadge({children, bgColor}:{children: ReactNode, bgColor:string}){
+export function PropertyBadge({children, bgColor}:{children: ReactNode, bgColor:string}){
     return <div className={"px-2 py-1 text-white "+ bgColor}>
         <span>{children}</span>
     </div>

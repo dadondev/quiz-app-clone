@@ -5,24 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="788a8e5f-63bb-4fa2-b23e-25a82f4c07c3" name="Changes" comment="updated&#10;&#10;Signed-off-by: dadondev &lt;dadondev03@gmail.com&gt;">
-      <change afterPath="$PROJECT_DIR$/src/components/badges/badge.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/book/book.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navLinks/navLink.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/primaryLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/constantans.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/book/book.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/book/book.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login.form.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/password/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/password/input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/action.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/auth/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constantans.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +54,9 @@
     &quot;accountId&quot;: &quot;3b080135-35fa-4966-9d40-cc8074be9375&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -97,6 +91,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\nextjs\elibrary\src\pages\auth" />
       <recent name="F:\nextjs\elibrary\src\pages" />
     </key>
   </component>
@@ -131,7 +126,7 @@
       <workItem from="1726305447226" duration="1023000" />
       <workItem from="1726306499610" duration="2934000" />
       <workItem from="1726309663166" duration="26000" />
-      <workItem from="1726309722161" duration="12736000" />
+      <workItem from="1726309722161" duration="15554000" />
     </task>
     <task id="LOCAL-00001" summary="prefer with react">
       <option name="closed" value="true" />
