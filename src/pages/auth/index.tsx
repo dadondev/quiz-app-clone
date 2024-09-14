@@ -7,7 +7,6 @@ import {useRouter} from "next/navigation";
 import {Form, Formik} from "formik";
 import {loginSchema} from "@/utils/schemas";
 import toast from "react-hot-toast";
-import axios from "axios";
 import {registerDataI} from "@/utils/types";
 import Cookies from "js-cookie";
 import { BASE_URL } from "@/utils/utils"
@@ -18,17 +17,23 @@ const initialValues = {
 }
 
 async function login(phoneNumber:string, password:string){
-    const resp = await axios.post<registerDataI>(`${BASE_URL}/auth/login`, {phoneNumber,password}, {
-        withCredentials:true
-    });
+    const resp =await fetch(`${BASE_URL}/auth/login`, {
+        headers:{
+            "Content-Type": "application/json",
+        },
+        method:"POST",
+        body:JSON.stringify({phoneNumber,password}),
+        cache:"no-cache"
+    })
+    const data:registerDataI = await resp.json();
     if(resp.status === 200){
         const today = new Date()
         today.setTime(today.getTime() + (12 * 60 * 60 * 1000));
-        Cookies.set("accessToken", resp.data.tokens.accessToken, {expires:today})
-        Cookies.set("refreshToken", resp.data.tokens.refreshToken, {expires:30})
-        return resp.data.user
+        Cookies.set("accessToken", data.tokens.accessToken, {expires:today})
+        Cookies.set("refreshToken", data.tokens.refreshToken, {expires:30})
+        return data.user
     }
-    return resp.data
+    return data.user
 }
 
 
