@@ -3,15 +3,32 @@ import {InputMask} from "primereact/inputmask";
 import {Button} from "primereact/button";
 import PasswordInput from "@/components/password/input";
 import {CgSpinner} from "react-icons/cg";
-import {login} from "@/action";
 import {useRouter} from "next/navigation";
 import {Form, Formik} from "formik";
 import {loginSchema} from "@/utils/schemas";
 import toast from "react-hot-toast";
+import axios from "axios";
+import {registerDataI} from "@/utils/types";
+import Cookies from "js-cookie";
+import { BASE_URL } from "@/utils/utils"
 
 const initialValues = {
     password: "",
     phoneNumber:""
+}
+
+async function login(phoneNumber:string, password:string){
+    const resp = await axios.post<registerDataI>(`${BASE_URL}/auth/login`, {phoneNumber,password}, {
+        withCredentials:true
+    });
+    if(resp.status === 200){
+        const today = new Date()
+        today.setTime(today.getTime() + (12 * 60 * 60 * 1000));
+        Cookies.set("accessToken", resp.data.tokens.accessToken, {expires:today})
+        Cookies.set("refreshToken", resp.data.tokens.refreshToken, {expires:30})
+        return resp.data.user
+    }
+    return resp.data
 }
 
 
@@ -24,10 +41,10 @@ function Page(){
         phoneNumber ="+998" + phoneNumber.replaceAll("-", "")
         try{
             toast.loading("Yuklanmoqda")
-            const resp =await login(phoneNumber, password);
+            const data = await login(phoneNumber, password);
             toast.dismiss()
             toast.success("Kirish muvaffaqiyatli yakunlandi!")
-            if("firstName" in resp) return router.push("/")
+            return router.push("/")
         }catch (err) {
             toast.dismiss()
             toast.error("Iltimos login va parolni tekshirib qayta urining!")

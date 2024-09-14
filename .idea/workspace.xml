@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="788a8e5f-63bb-4fa2-b23e-25a82f4c07c3" name="Changes" comment="updated&#10;&#10;Signed-off-by: dadondev &lt;dadondev03@gmail.com&gt;" />
+    <list default="true" id="788a8e5f-63bb-4fa2-b23e-25a82f4c07c3" name="Changes" comment="updated&#10;&#10;Signed-off-by: dadondev &lt;dadondev03@gmail.com&gt;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/action.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +121,7 @@
       <workItem from="1726305447226" duration="1023000" />
       <workItem from="1726306499610" duration="2934000" />
       <workItem from="1726309663166" duration="26000" />
-      <workItem from="1726309722161" duration="15867000" />
+      <workItem from="1726309722161" duration="17677000" />
     </task>
     <task id="LOCAL-00001" summary="prefer with react">
       <option name="closed" value="true" />
