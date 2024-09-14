@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import {PrimeReactProvider} from "primereact/api";
 import localFont from "next/font/local";
 import Tailwind from "primereact/passthrough/tailwind";
+import {Toaster} from "react-hot-toast";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return <PrimeReactProvider value={{ unstyled:true, pt:Tailwind }}>
     <div className={geistMono.className+" h-full [&>div]:h-full "+geistSans.variable}>
       <Component {...pageProps} />
+      <Toaster toastOptions={{className:"text-sm"}}/>
     </div>
   </PrimeReactProvider>;
 }

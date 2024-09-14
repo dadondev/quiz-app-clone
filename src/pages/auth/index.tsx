@@ -7,6 +7,7 @@ import {login} from "@/pages/action";
 import {useRouter} from "next/navigation";
 import {Form, Formik} from "formik";
 import {loginSchema} from "@/utils/schemas";
+import toast from "react-hot-toast";
 
 const initialValues = {
     password: "",
@@ -21,19 +22,28 @@ function Page(){
         const password = e.password
         phoneNumber = phoneNumber.replaceAll(" ", "")
         phoneNumber ="+998" + phoneNumber.replaceAll("-", "")
-        await login(phoneNumber, password)
-        router.push("/")
+        try{
+            toast.loading("Yuklanmoqda")
+            const resp =await login(phoneNumber, password);
+            toast.dismiss()
+            toast.success("Kirish muvaffaqiyatli yakunlandi!")
+            if("firstName" in resp) return router.push("/")
+        }catch (err) {
+            toast.dismiss()
+            toast.error("Iltimos login va parolni tekshirib qayta urining!")
+        }
+
     }
     return <div className={"h-full grid place-items-center"}>
         <Formik initialValues={initialValues} validationSchema={loginSchema} onSubmit={handleSubmit} className={"grid gap-4 max-w-[320px] w-full"}>
             {(({isSubmitting, errors, touched, handleSubmit, handleBlur, handleChange}) => {
                 return <Form className={"grid gap-3 max-w-[300px] w-full"} onSubmit={handleSubmit}>
                     <div className={"grid gap-2"}>
-                        <InputMask mask={"99 999-99-99"} className={"py-2"} name={"phoneNumber"} onChange={handleChange} onBlur={handleBlur}/>
-                         <p data-open={errors.password && touched.password} className={"scale-0 text-base text-red-500 data-[open=true]:scale-100 transition-all"}>{errors.phoneNumber}</p>
+                        <InputMask mask={"99 999-99-99"} disabled={isSubmitting} className={"py-2"} name={"phoneNumber"} onChange={handleChange} onBlur={handleBlur}/>
+                         <p data-open={Boolean(errors.phoneNumber)} className={"scale-0 text-base text-red-500 data-[open=true]:scale-100 transition-all"}>{errors.phoneNumber}</p>
                     </div>
                     <div className="grid gap-2">
-                        <PasswordInput errors={errors} touched={touched} handleBlur={handleBlur} handleChange={handleChange}/>
+                        <PasswordInput isSubmitting={isSubmitting} errors={errors} touched={touched} handleBlur={handleBlur} handleChange={handleChange}/>
                     </div>
                     <Button type={"submit"} rounded
                             disabled={isSubmitting}

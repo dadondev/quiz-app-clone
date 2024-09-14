@@ -1,4 +1,5 @@
 /** @format */
+import {ReactNode} from "react";
 
 export interface loginI {
 	phoneNumber: string;
@@ -17,4 +18,10 @@ export interface registerDataI {
         accessToken:string,
         refreshToken:string,
     }
+}
+
+export interface NavLinkI {
+    icon:ReactNode,
+    url:string,
+    name:string
 }

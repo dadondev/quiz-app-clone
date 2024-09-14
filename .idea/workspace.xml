@@ -4,16 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="788a8e5f-63bb-4fa2-b23e-25a82f4c07c3" name="Changes" comment="updated">
+    <list default="true" id="788a8e5f-63bb-4fa2-b23e-25a82f4c07c3" name="Changes" comment="updated&#10;&#10;Signed-off-by: dadondev &lt;dadondev03@gmail.com&gt;">
+      <change afterPath="$PROJECT_DIR$/src/components/badges/badge.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/book/book.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navLinks/navLink.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/primaryLayout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/constantans.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/password/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/password/input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/action.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -24,9 +44,17 @@
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;dadondev&quot;,
+      &quot;author&quot;: &quot;dadondev&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;dadondev&quot;
+    &quot;assignee&quot;: &quot;dadondev&quot;,
+    &quot;author&quot;: &quot;dadondev&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">{
@@ -39,6 +67,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2lznA0IDs14CIE2TQA6iWSMUF5v" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -95,7 +126,12 @@
       <workItem from="1726222249114" duration="1412000" />
       <workItem from="1726223905316" duration="9985000" />
       <workItem from="1726246518256" duration="1137000" />
-      <workItem from="1726247686047" duration="100000" />
+      <workItem from="1726247686047" duration="265000" />
+      <workItem from="1726305115586" duration="276000" />
+      <workItem from="1726305447226" duration="1023000" />
+      <workItem from="1726306499610" duration="2934000" />
+      <workItem from="1726309663166" duration="26000" />
+      <workItem from="1726309722161" duration="12736000" />
     </task>
     <task id="LOCAL-00001" summary="prefer with react">
       <option name="closed" value="true" />
@@ -153,7 +189,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726247381988</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updated">
+      <option name="closed" value="true" />
+      <created>1726247821776</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726247821776</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updated&#10;&#10;Signed-off-by: dadondev &lt;dadondev03@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1726247859970</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726247859970</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +216,7 @@
     <MESSAGE value="prefer with nextjs" />
     <MESSAGE value="removed idea folder" />
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="updated&#10;&#10;Signed-off-by: dadondev &lt;dadondev03@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated&#10;&#10;Signed-off-by: dadondev &lt;dadondev03@gmail.com&gt;" />
   </component>
 </project>
