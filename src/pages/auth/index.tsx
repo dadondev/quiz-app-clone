@@ -41,7 +41,7 @@ function Page(){
         phoneNumber ="+998" + phoneNumber.replaceAll("-", "")
         try{
             toast.loading("Yuklanmoqda")
-            const data = await login(phoneNumber, password);
+            await login(phoneNumber, password);
             toast.dismiss()
             toast.success("Kirish muvaffaqiyatli yakunlandi!")
             return router.push("/")
