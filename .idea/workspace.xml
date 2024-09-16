@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="788a8e5f-63bb-4fa2-b23e-25a82f4c07c3" name="Changes" comment="updated&#10;&#10;Signed-off-by: dadondev &lt;dadondev03@gmail.com&gt;">
+      <change afterPath="$PROJECT_DIR$/src/components/book/allBooks.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modals/delete.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modals/edit.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modals/mainModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/states/books.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/states/modal/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/action.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/book/book.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/book/book.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/auth/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/schemas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/schemas.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +100,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\nextjs\elibrary\src\states" />
       <recent name="F:\nextjs\elibrary\src" />
       <recent name="F:\nextjs\elibrary\src\pages\auth" />
       <recent name="F:\nextjs\elibrary\src\pages" />
@@ -122,7 +139,10 @@
       <workItem from="1726309663166" duration="26000" />
       <workItem from="1726309722161" duration="17929000" />
       <workItem from="1726335472339" duration="410000" />
-      <workItem from="1726336342995" duration="368000" />
+      <workItem from="1726336342995" duration="25901000" />
+      <workItem from="1726406356162" duration="931000" />
+      <workItem from="1726407333323" duration="1057000" />
+      <workItem from="1726409236182" duration="11316000" />
     </task>
     <task id="LOCAL-00001" summary="prefer with react">
       <option name="closed" value="true" />

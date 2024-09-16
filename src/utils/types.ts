@@ -25,3 +25,13 @@ export interface NavLinkI {
     url:string,
     name:string
 }
+
+export type modalsT = "edit"|"delete"|"removeUser"|"addUser"|"missing"
+
+export interface bookI {
+    name:string,
+    pagesCount:number,
+    status:"borrowed"|"free" |"missing",
+    id:string,
+    author:string
+}

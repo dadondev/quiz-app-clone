@@ -12,8 +12,6 @@ export default async function middleware(req: NextRequest) {
     const accessToken = req.cookies.get("accessToken");
     const refreshToken = req.cookies.get("refreshToken");
 
-    console.log(accessToken, refreshToken)
-
     if (!accessToken) {
         return NextResponse.redirect(new URL("/auth", req.url));
     }
@@ -35,7 +33,6 @@ function verifyToken(accessToken: string, refreshToken: string) {
         return false
     }catch(error){
         const err = error as Error
-        console.log(err.name)
         if(err.name === "Error") return false
         return true
     }

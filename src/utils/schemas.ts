@@ -9,3 +9,10 @@ export const loginSchema = yup.object({
 		.string()
 		.required("Parolni kiritish majburiy!").min(6,"Iltimos parolni uzaytiring!").max(11, "Iltimos parolni qisqartiring!")
 });
+
+
+export const editBookSchema = yup.object({
+	name:yup.string().required("Kitob nomi kiritish majburiy!").min(2,"Kitob nomi juda qisqa!").max(100, "Kitob nomi juda uzun!"),
+	pagesCount:yup.number().required("Betlar sonini kiritish majburiy!").min(1, "Betlar soni juda kam!").max(2500,"Betlar soni juda katta!"),
+	author:yup.string().required("Muallifni kiritish majburiy!").min(3, "Betlar soni juda kam!").max(2500, "Betlar soni juda ko'p!"),
+})

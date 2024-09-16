@@ -29,11 +29,11 @@ async function login(phoneNumber:string, password:string){
     if(resp.status === 200){
         const today = new Date()
         today.setTime(today.getTime() + (12 * 60 * 60 * 1000));
-        Cookies.set("accessToken", data.tokens.accessToken, {expires:today})
-        Cookies.set("refreshToken", data.tokens.refreshToken, {expires:30})
+        Cookies.set("accessToken", data.tokens.accessToken, {expires:today, secure:true})
+        Cookies.set("refreshToken", data.tokens.refreshToken, {expires:30, secure:true})
         return data.user
     }
-    return data.user
+    throw new Error("Admin not found")
 }
 
 
@@ -54,12 +54,11 @@ function Page(){
             toast.dismiss()
             toast.error("Iltimos login va parolni tekshirib qayta urining!")
         }
-
     }
     return <div className={"h-full grid place-items-center"}>
         <Formik initialValues={initialValues} validationSchema={loginSchema} onSubmit={handleSubmit} className={"grid gap-4 max-w-[320px] w-full"}>
             {(({isSubmitting, errors, touched, handleSubmit, handleBlur, handleChange}) => {
-                return <Form className={"grid gap-3 max-w-[300px] w-full"} onSubmit={handleSubmit}>
+                return <Form onSubmit={handleSubmit}>
                     <div className={"grid gap-2"}>
                         <InputMask mask={"99 999-99-99"} disabled={isSubmitting} className={"py-2"} name={"phoneNumber"} onChange={handleChange} onBlur={handleBlur}/>
                          <p data-open={Boolean(errors.phoneNumber)} className={"scale-0 text-base text-red-500 data-[open=true]:scale-100 transition-all"}>{errors.phoneNumber}</p>
