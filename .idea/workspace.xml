@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="788a8e5f-63bb-4fa2-b23e-25a82f4c07c3" name="Changes" comment="updated&#10;&#10;Signed-off-by: dadondev &lt;dadondev03@gmail.com&gt;">
-      <change afterPath="$PROJECT_DIR$/src/components/book/allBooks.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modals/delete.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modals/edit.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modals/mainModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/states/books.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/states/modal/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/states/edit/edit.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/action.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/book/book.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/book/book.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/edit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/edit.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/auth/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/schemas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/schemas.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/types.ts" afterDir="false" />
     </list>
@@ -82,6 +74,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
     &quot;last_opened_file_path&quot;: &quot;F:/nextjs/elibrary&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -142,7 +135,12 @@
       <workItem from="1726336342995" duration="25901000" />
       <workItem from="1726406356162" duration="931000" />
       <workItem from="1726407333323" duration="1057000" />
-      <workItem from="1726409236182" duration="11316000" />
+      <workItem from="1726409236182" duration="12112000" />
+      <workItem from="1726478223136" duration="17007000" />
+      <workItem from="1726505866139" duration="4720000" />
+      <workItem from="1726543011029" duration="1677000" />
+      <workItem from="1726552445127" duration="433000" />
+      <workItem from="1726552897047" duration="301000" />
     </task>
     <task id="LOCAL-00001" summary="prefer with react">
       <option name="closed" value="true" />

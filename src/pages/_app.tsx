@@ -6,6 +6,7 @@ import Tailwind from "primereact/passthrough/tailwind";
 import {Toaster} from "react-hot-toast";
 import MainModal from "@/components/modals/mainModal";
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
+import {PagesTopLoader} from "nextjs-toploader/pages";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return <QueryClientProvider client={queryClient}>
     <PrimeReactProvider value={{ unstyled:true, pt:Tailwind }}>
       <div className={geistMono.className+" h-full [&>div]:h-full "+geistSans.variable}>
+        <PagesTopLoader color={"#3b82f6"}/>
         <Component {...pageProps} />
         <Toaster toastOptions={{className:"text-sm"}}/>
         <MainModal />

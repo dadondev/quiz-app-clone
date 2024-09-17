@@ -35,3 +35,9 @@ export interface bookI {
     id:string,
     author:string
 }
+
+export interface EditFormI {
+    pagesCount:number,
+    name:string,
+    author:string,
+}
