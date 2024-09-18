@@ -4,7 +4,7 @@ import {InputNumber} from "primereact/inputnumber";
 import {Button} from "primereact/button";
 import {CgSpinner} from "react-icons/cg";
 import {FormikConfig,  useFormik} from "formik";
-import {EditFormI} from "@/utils/types";
+import {bookI, EditFormI} from "@/utils/types";
 import {useEffect} from "react";
 import {editBookSchema} from "@/utils/schemas";
 import toast from "react-hot-toast";
@@ -17,17 +17,18 @@ import useModalStore from "@/states/modal/store";
 
 async function onSubmit(id:string, values:EditFormI){
     const fetchData= editBook(id, values)
-    toast.promise(fetchData, {
+    const data = await toast.promise(fetchData, {
         loading:"Tahrirlanmoqda...",
         success:"Muvaffaqiyatli tarzda tahrirlandi!",
         error:"Tahrirlashda muammo bo'ldi. Qayta urinib ko'ring!"
     })
+    return data
 }
 
 
 function EditModal(){
     const {close}= useModalStore()
-    const { currentBook } = useBooksStore((state)=>state)
+    const { currentBook, updateOne } = useBooksStore((state)=>state)
     const options:FormikConfig<EditFormI> = {
         initialValues:{
             name:"",
@@ -35,11 +36,13 @@ function EditModal(){
             pagesCount:1
         },
         validationSchema:editBookSchema,
-        onSubmit:(values)=>{
+        onSubmit:async (values)=>{
             close()
-            onSubmit(currentBook?.id || "", values)
+            const data:bookI = await onSubmit(currentBook?.id || "", values)
+            updateOne(data.id, values)
         }
     }
+
 
     const {handleSubmit, errors, isSubmitting,handleChange, handleBlur, setValues, values} = useFormik(options)
 

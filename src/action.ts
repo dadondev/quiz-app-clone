@@ -32,3 +32,42 @@ export async function editBook(id:string, values:EditFormI){
     if(!resp.ok) throw new Error("Tahrirlashda muammo bo'ldi!");
     return await resp.json()
 }
+
+
+export async function getCatalogs(){
+    const cookies = cookie.parse(document.cookie || "")
+    const resp = await fetch(BASE_URL + "/catalogs/getAll", {
+        headers:{
+            Authorization: cookies.accessToken,
+        }
+    });
+    if(!resp.ok) throw new Error("Fetching failed!")
+    const data = await resp.json();
+    return data
+}
+
+export async function createBorrow(bookId:string, userId:string){
+    const cookies= cookie.parse(document.cookie)
+    const resp = await fetch(`${BASE_URL}/borrow/create`, {
+        method:"POST",
+        body:JSON.stringify({bookId, userId}),
+        headers:{
+            "Content-Type":"application/json",
+            authorization:cookies.accessToken
+        }
+    })
+    if(!resp.ok) throw new Error("Fetching failed")
+    return await resp.json()
+}
+
+export async function deleteBorrow(id:string){
+    const cookies= cookie.parse(document.cookie)
+    const resp = await fetch(`${BASE_URL}/borrow/delete/${id}`, {
+        headers:{
+            Authorization: cookies.accessToken
+        },
+        method:'DELETE'
+    })
+    if(!resp.ok) throw new Error("Fetching failed")
+    return await resp.json()
+}

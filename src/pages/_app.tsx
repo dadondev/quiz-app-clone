@@ -7,6 +7,8 @@ import {Toaster} from "react-hot-toast";
 import MainModal from "@/components/modals/mainModal";
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 import {PagesTopLoader} from "nextjs-toploader/pages";
+import 'primeicons/primeicons.css';
+import {ConfirmDialog} from "primereact/confirmdialog";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className={geistMono.className+" h-full [&>div]:h-full "+geistSans.variable}>
         <PagesTopLoader color={"#3b82f6"}/>
         <Component {...pageProps} />
+        <ConfirmDialog className={"max-w-[300px] w-full"}/>
         <Toaster toastOptions={{className:"text-sm"}}/>
         <MainModal />
       </div>
