@@ -8,7 +8,6 @@ function AllBooks ({books}:{books:bookI[]}){
     const store = useBooksStore((state)=>state)
     useEffect(()=>{
         setDatas(store.books)
-        console.log(store.books)
     },[store.books])
     useEffect(() => {
         store.give(books)
