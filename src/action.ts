@@ -71,3 +71,30 @@ export async function deleteBorrow(id:string){
     if(!resp.ok) throw new Error("Fetching failed")
     return await resp.json()
 }
+
+
+export async function changeMissing(id:string, borrowId?:string){
+    const cookies = cookie.parse(document.cookie)
+    const resp = await fetch(`${BASE_URL}/books/changeStatus/${id}?status=missing` + (borrowId ? `&borrowId=${borrowId}`:""), {
+        headers:{
+            Authorization: cookies.accessToken
+        }
+    })
+    if(!resp.ok) throw new Error("Fetching failed")
+    return await resp.json()
+}
+
+export async function createBook(payload:EditFormI){
+    const cookies= cookie.parse(document.cookie)
+    const resp = await fetch(`${BASE_URL}/books/create`, {
+        headers:{
+            "Content-Type":"application/json",
+            authorization:cookies.accessToken
+        },
+        body:JSON.stringify(payload),
+        method:"POST",
+    })
+    if(!resp.ok) throw new Error("Fetching failed")
+    return await resp.json()
+
+}

@@ -6,7 +6,7 @@ const textes = {
 }
 
 function BookBadge({type}:bookBadgeI) {
-    return <div data-type={type} className={"px-2 py-1 text-sm data-[type=free]:bg-white data-[type=borrowed]:text-white data-[type=borrowed]:bg-blue-600"}><span>{textes[type]}</span></div>
+    return <div data-type={type} className={"px-2 py-1 bg-red-500 data-[type=missing]:text-white text-sm data-[type=free]:bg-white data-[type=borrowed]:text-white data-[type=borrowed]:bg-blue-600"}><span>{textes[type]}</span></div>
 }
 
 export default BookBadge

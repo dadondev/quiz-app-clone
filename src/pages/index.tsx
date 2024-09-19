@@ -4,7 +4,7 @@ import {BASE_URL} from "@/utils/utils";
 import {bookI} from "@/utils/types";
 import AllBooks from "@/components/book/allBooks";
 import cookie from "cookie"
-import {useState} from "react";
+import HomeHeader from "@/components/header/home.header";
 
 
 
@@ -25,9 +25,12 @@ export const getServerSideProps = (async (context) => {
 
 function Page({books}: InferGetServerSidePropsType<typeof getServerSideProps>){
   return <PrimaryLayout>
-    <div className={"pt-5 px-5 container mx-auto"}>
-      <AllBooks books={books}/>
-    </div>
+     <div>
+       <HomeHeader/>
+       <div className={"pt-5 px-5 container mx-auto"}>
+         <AllBooks books={books}/>
+       </div>
+     </div>
   </PrimaryLayout>
 }
 

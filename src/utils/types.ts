@@ -26,7 +26,7 @@ export interface NavLinkI {
     name:string
 }
 
-export type modalsT = "edit"|"delete"|"removeUser"|"addUser"|"missing"|"addUserToBook"
+export type modalsT = "edit"|"delete"|"removeUser"|"addUser"|"missing"|"addUserToBook"|"addBook"
 
 export interface bookI {
     name:string,

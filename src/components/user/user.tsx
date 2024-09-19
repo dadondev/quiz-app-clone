@@ -8,10 +8,6 @@ import {CatalogI} from "@/utils/types";
 import {createBorrow} from "@/action";
 import useBooksStore from "@/states/books";
 
-export async function getServerSideProps(){
-
-}
-
 function User({firstName,lastName, id}:CatalogI) {
     const {close} = useModalStore()
     const { currentBook, updateStatus } = useBooksStore()

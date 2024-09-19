@@ -5,14 +5,18 @@ import DeleteModal from "@/components/modals/delete";
 import EditModal from "@/components/modals/edit";
 import AddUserToBook from "@/components/modals/addUserToBook";
 import RemoveUser from "@/components/modals/removeUser";
+import MissingModal from "@/components/modals/missing";
+import CreateBook from "@/components/modals/createBook";
+
 
 const modals = {
     edit:<EditModal/>,
     delete:<DeleteModal/>,
     removeUser:<RemoveUser/>,
     addUser:<>salom user</>,
-    missing:<>hello user</>,
-    addUserToBook:<AddUserToBook></AddUserToBook>
+    missing:<MissingModal/>,
+    addUserToBook:<AddUserToBook></AddUserToBook>,
+    addBook:<CreateBook></CreateBook>
 }
 
 

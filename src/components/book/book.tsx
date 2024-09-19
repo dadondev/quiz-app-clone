@@ -3,12 +3,13 @@ import {ReactNode, useState} from "react";
 import {Button} from "primereact/button";
 import {BiEdit, BiTrash} from "react-icons/bi";
 import {FaUserMinus} from "react-icons/fa";
-import {AiFillFileUnknown} from "react-icons/ai";
 import {CgClose} from "react-icons/cg";
 import useModalStore from "@/states/modal/store";
 import {bookI, modalsT} from "@/utils/types";
 import useBooksStore from "@/states/books";
 import {TiUserAdd} from "react-icons/ti";
+import {RiExchangeFill} from "react-icons/ri";
+import toast from "react-hot-toast";
 
 
 function Book({name,status,author,pagesCount, id, borrowId}:bookI){
@@ -50,7 +51,8 @@ function Book({name,status,author,pagesCount, id, borrowId}:bookI){
                <Button type={"button"} severity={"secondary"} className={"!p-[6px]"} onClick={()=>handler("edit")}><BiEdit size={24}/></Button>
                {(borrowed && borrowId) &&<Button type={"button"} severity={"danger"} className={"!p-[6px]"} onClick={()=>handler("removeUser")}><FaUserMinus size={24}/></Button>}
                {status ==="free" && <Button severity={"success"} onClick={()=>handler("addUserToBook")}><TiUserAdd size={24}/></Button>}
-               <Button type={"button"} severity={"warning"} className={"!p-[6px]"}><AiFillFileUnknown size={24} /></Button>
+               {status !== "missing" && <Button type={"button"} severity={"warning"} onClick={() => handler("missing")}
+                        className={"!p-[6px]"}><RiExchangeFill size={24}/></Button>}
            </div>
         </div>
     </div>

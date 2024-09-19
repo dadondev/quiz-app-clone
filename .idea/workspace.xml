@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="788a8e5f-63bb-4fa2-b23e-25a82f4c07c3" name="Changes" comment="updated&#10;&#10;Signed-off-by: dadondev &lt;dadondev03@gmail.com&gt;">
-      <change afterPath="$PROJECT_DIR$/src/components/forms/allCatalogs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/forms/giveBookToUser.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modals/addUserToBook.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modals/removeUser.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/user/user.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/states/catalog/catalog.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/home.header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modals/createBook.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modals/missing.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/action.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/book/allBooks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/book/allBooks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/badges/badge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/badges/badge.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/book/book.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/book/book.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modals/edit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/edit.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/modals/mainModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/mainModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user/user.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/user.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/states/books.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/states/books.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +142,7 @@
       <workItem from="1726543011029" duration="1677000" />
       <workItem from="1726552445127" duration="433000" />
       <workItem from="1726552897047" duration="19477000" />
-      <workItem from="1726655509980" duration="16359000" />
+      <workItem from="1726655509980" duration="28971000" />
     </task>
     <task id="LOCAL-00001" summary="prefer with react">
       <option name="closed" value="true" />
